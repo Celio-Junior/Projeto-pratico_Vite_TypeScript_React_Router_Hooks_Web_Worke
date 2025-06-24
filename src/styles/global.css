@@ -1,0 +1,20 @@
+@import url(./variables.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--gray-900);
+  color: var(--text-default);
+}
+
+.container {
+  overflow: hidden;
+  margin: 3.2rem auto;
+  max-width: 100rem;
+  padding: 0 3.2rem;
+}

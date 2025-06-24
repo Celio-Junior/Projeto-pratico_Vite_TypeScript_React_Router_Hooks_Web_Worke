@@ -1,0 +1,51 @@
+.heading {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 3rem;
+}
+
+.button-container {
+  & button {
+    min-width: auto;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  & svg {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+.responsive-table {
+  overflow-x: auto;
+  border-radius: 0.8rem;
+
+  & table {
+    width: 100%;
+    min-width: 6.4rem;
+    border-collapse: collapse;
+  }
+  & th {
+    background-color: var(--gray-600);
+  }
+  & td {
+    background-color: var(--gray-800);
+  }
+  & th,
+  & td {
+    border-bottom: 0.2rem solid var(--gray-700);
+    text-align: left;
+    padding: 1.6rem;
+  }
+
+  & th.thSort {
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+      filter: brightness(80%);
+    }
+  }
+}

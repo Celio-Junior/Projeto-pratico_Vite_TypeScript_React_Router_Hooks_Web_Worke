@@ -1,0 +1,22 @@
+.menu {
+  display: flex;
+  flex-flow: nowrap row;
+  gap: 1.6rem;
+}
+
+.menu-link {
+  color: var(--text-over-primary);
+  background-color: var(--primary);
+  padding: 1rem;
+  text-decoration: none;
+  border-radius: 0.8rem;
+
+  &:hover {
+    filter: brightness(70%);
+  }
+
+  & svg {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+}
